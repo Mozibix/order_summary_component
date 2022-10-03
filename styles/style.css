@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main {
+  background-color: hsl(225deg, 100%, 94%);
+  height: 100vh;
+}
+.main .desktop {
+  position: absolute;
+}
+.main .desktop svg {
+  max-width: 100%;
+}
+.main .mobile {
+  display: none;
+}
+.main_inner {
+  padding: 2rem;
+  padding-left: 8rem;
+}
+.main_inner .content_box {
+  text-align: center;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 10px;
+  width: 28.2rem;
+  height: 37rem;
+  margin-left: 20rem;
+}
+.main_inner .content_box_inner .top_sec svg {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.main_inner .content_box_inner .bottom_sec .header h2 {
+  font-weight: 900;
+  font-size: 2em;
+  margin-top: 1rem;
+  color: hsl(223deg, 47%, 23%);
+}
+.main_inner .content_box_inner .bottom_sec .text_sec p {
+  font-size: 16px;
+  line-height: 2em;
+  word-spacing: 0.2em;
+  color: hsl(224deg, 23%, 55%);
+  width: 20rem;
+  inset-inline-start: 4.4rem;
+}
+.main_inner .content_box_inner .bottom_sec .plan_sec {
+  background-color: hsl(225deg, 100%, 97%);
+  border-radius: 10px;
+  width: 20rem;
+  margin: 2.5rem 0 1.5rem 4rem;
+}
+.main_inner .content_box_inner .bottom_sec .plan_sec_inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main_inner .content_box_inner .bottom_sec .plan_sec_inner .icon svg {
+  inset-inline-start: -1.5rem;
+}
+.main_inner .content_box_inner .bottom_sec .plan_sec_inner .duration_details ul {
+  text-align: left;
+  list-style: none;
+  inset-inline-start: -2.5rem;
+}
+.main_inner .content_box_inner .bottom_sec .plan_sec_inner .duration_details ul li h3 {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+}
+.main_inner .content_box_inner .bottom_sec .plan_sec_inner .duration_details ul li p {
+  color: hsl(224deg, 23%, 55%);
+  letter-spacing: 0.1em;
+}
+.main_inner .content_box_inner .bottom_sec .plan_sec_inner .change p {
+  text-transform: capitalize;
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 900;
+  font-size: 18px;
+  inset-inline-start: 1rem;
+}
+.main_inner .content_box_inner .bottom_sec button {
+  background-color: hsl(245deg, 75%, 52%);
+  border-radius: 10px;
+  border: none;
+  padding: 0.8rem 6rem;
+  box-shadow: 0 10px 10px 0 hsl(225deg, 100%, 97%);
+  color: #fff;
+  letter-spacing: 0.2em;
+  margin-top: 0.5rem;
+}
+.main_inner .content_box_inner .bottom_sec p {
+  inset: 1.6rem 0;
+  text-transform: capitalize;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 700;
+}
+.main_inner .attribution {
+  font-size: 11px;
+  text-align: center;
+  inset: 1.5rem -3rem;
+}
+.main_inner .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

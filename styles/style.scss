@@ -1,0 +1,140 @@
+@import "./colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main {
+  background-color: $primary;
+  height: 100vh;
+  .desktop {
+    position: absolute;
+    svg {
+      max-width: 100%;
+    }
+  }
+  .mobile {
+    display: none;
+  }
+
+  &_inner {
+    padding: 2rem;
+    padding-left: 8rem;
+    .content_box {
+      text-align: center;
+      background-color: $box_color;
+      border-radius: 10px;
+      width: 28.2rem;
+      height: 37rem;
+      margin-left: 20rem;
+      &_inner {
+        .top_sec {
+          svg {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+          }
+        }
+
+        .bottom_sec {
+          .header {
+            h2 {
+              font-weight: 900;
+              font-size: 2em;
+              margin-top: 1rem;
+              color: $summary;
+            }
+          }
+
+          .text_sec {
+            p {
+              font-size: 16px;
+              line-height: 2em;
+              word-spacing: 0.2em;
+              color: $text;
+              width: 20rem;
+              inset-inline-start: 4.4rem;
+            }
+          }
+
+          .plan_sec {
+            background-color: $plan;
+            border-radius: 10px;
+            width: 20rem;
+            margin: 2.5rem 0 1.5rem 4rem;
+            &_inner {
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+
+              .icon {
+                svg {
+                  inset-inline-start: -1.5rem;
+                }
+              }
+
+              .duration_details {
+                ul {
+                  text-align: left;
+                  list-style: none;
+                  inset-inline-start: -2.5rem;
+                  li {
+                    h3 {
+                      color: $summary;
+                      font-weight: 900;
+                    }
+                  }
+
+                  li {
+                    p {
+                      color: $text;
+                      letter-spacing: 0.1em;
+                    }
+                  }
+                }
+              }
+
+              .change {
+                p {
+                  text-transform: capitalize;
+                  color: $change;
+                  font-weight: 900;
+                  font-size: 18px;
+                  inset-inline-start: 1rem;
+                }
+              }
+            }
+          }
+
+          button {
+            background-color: $change;
+            border-radius: 10px;
+            border: none;
+            padding: 0.8rem 6rem;
+            box-shadow: 0 10px 10px 0 $plan;
+            color: $white;
+            letter-spacing: 0.2em;
+            margin-top: 0.5rem;
+          }
+
+          p {
+            inset: 1.6rem 0;
+            text-transform: capitalize;
+            color: $text;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      inset: 1.5rem -3rem;
+      a {
+        color: $footer;
+      }
+    }
+  }
+}
